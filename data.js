@@ -75,7 +75,7 @@ window.JOURNEY = [
     icon: "🎬",
     title: "Our First Movie",
     date: "Winter, 2015",
-    photo: "🎬",
+    photo: ".github/workflows/2f649129f8f5911fe7cee2041ff0a1dd.png",
     blurb:
       "We argued about the ending for the entire walk home. First of many " +
       "post-credits debates, and neither of us has ever conceded.",
