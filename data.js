@@ -65,7 +65,7 @@ window.JOURNEY = [
     blurb:
       "A rainy afternoon, two strangers, and one very crowded little café. " +
       "Neither of us knew it yet, but the map of everything started here.",
-    question: "In which cozy place did we first meet?",
+    question: "In where did we meet?",
     hint: "You order a flat white there. It rhymes with 'affair'.",
     answers: ["cafe", "coffee shop", "the cafe", "coffeeshop", "caffe"],
   },
