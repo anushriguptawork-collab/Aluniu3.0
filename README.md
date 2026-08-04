@@ -1,4 +1,4 @@
-# Memoirs in Motion ✦
+# Alu Niu ✦
 
 An interactive, memory-unlocked journey map. Instead of a static timeline,
 personal milestones are **locked behind trivia** and revealed one at a time —
