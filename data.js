@@ -37,24 +37,24 @@ window.CHAPTER_SIZE = 5;
 
 window.CHAPTERS = [
   {
-    name: "Chapter I — First Light",
-    code: "BEGIN",
-    intro: "Enter the opening code to begin the journey.",
+    name: "Chapter I — Who made the first move",
+    code: "ITWASME",
+    intro: "Enter the opening code to go down the craziest memory lane.",
   },
   {
-    name: "Chapter II — Adventures",
+    name: "Chapter II — Universe wanted to",
     code: "JOURNEY",
-    intro: "Five memories in. Enter the next code to continue the adventure.",
+    intro: "Wow you remembered, so proud of you, its gonna get tougher",
   },
   {
-    name: "Chapter III — Forever",
+    name: "Chapter III — How I met your mother",
     code: "FOREVER",
-    intro: "The final stretch. Enter the last code to unlock the way home.",
+    intro: "I can't wait to spend rest of my life knowing you are there",
   },
 ];
 
 window.JOURNEY = [
-  /* ───────── Chapter I — First Light (code: BEGIN) ───────── */
+  /* ───────── Chapter I — Who made the first move (code: ITWASME) ───────── */
   {
     id: "meet",
     x: 10, y: 18,
