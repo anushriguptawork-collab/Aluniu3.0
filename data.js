@@ -59,8 +59,8 @@ window.JOURNEY = [
     id: "meet",
     x: 10, y: 18,
     icon: "☕",
-    title: "Where It All Began",
-    date: "Autumn, 2015",
+    title: "Where It All Began- 2023",
+    date: "from...",
     photo: "☕",
     blurb:
       "A rainy afternoon, two strangers, and one very crowded little café. " +
