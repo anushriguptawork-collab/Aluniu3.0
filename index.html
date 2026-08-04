@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memoirs in Motion — An Interactive Memory Journey</title>
+  <meta name="description" content="A gamified, narrative-driven journey map where personal memories are unlocked one milestone at a time." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient starfield / celebration canvas -->
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <div class="brand-text">
+        <h1>Memoirs in Motion</h1>
+        <p class="tagline">An interactive, memory-unlocked journey map</p>
+      </div>
+    </div>
+    <div class="progress-wrap" title="Journey progress">
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <span class="progress-label" id="progressLabel">0 / 0 memories unlocked</span>
+    </div>
+  </header>
+
+  <main class="stage">
+    <!-- The interactive journey map -->
+    <section class="map-panel" aria-label="Journey map">
+      <div class="map-viewport" id="mapViewport">
+        <svg id="mapSvg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(255,214,120,0.9)" />
+              <stop offset="60%" stop-color="rgba(255,150,90,0.25)" />
+              <stop offset="100%" stop-color="rgba(255,150,90,0)" />
+            </radialGradient>
+            <linearGradient id="pathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ffd678" />
+              <stop offset="100%" stop-color="#ff7ab6" />
+            </linearGradient>
+            <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="4" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <g id="pathLayer"></g>
+          <g id="nodeLayer"></g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- The active memory / question card -->
+    <aside class="side-panel" id="sidePanel" aria-live="polite">
+      <div class="card" id="card">
+        <!-- Rendered by app.js -->
+      </div>
+    </aside>
+  </main>
+
+  <!-- Feedback banner -->
+  <div class="feedback" id="feedback" role="status" aria-live="assertive"></div>
+
+  <!-- Finale overlay -->
+  <div class="finale" id="finale" hidden>
+    <div class="finale-inner">
+      <h2 id="finaleTitle">The journey is complete ✨</h2>
+      <p id="finaleText">Every memory has found its place on the map.</p>
+      <button class="btn primary" id="replayBtn" type="button">Relive the journey</button>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
